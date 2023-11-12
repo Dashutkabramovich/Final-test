@@ -2,7 +2,8 @@
 	 float: left;
 }
  nav {
-	 float: right;
+	 float: left;
+
 }
  nav ul {
 	 margin: 0;
@@ -17,10 +18,10 @@
 	 color: #fff;
 }
  a {
-	 color: #808000
+	 color: #dbdbdb
 }
  h1 {
-	 color: #008080
+	 color: #800000
 }
  p {
 	 color: #008000
