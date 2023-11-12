@@ -1,35 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Основы Git</title>
-    <link rel="stylesheet" href="git.css">
-</head>
-<body>
-<article id="news-body" itemprop="articleBody">
 
-    <p class="blue" style="color:blue">
-        Перед вами небольшая статья-шпаргалка,&nbsp; которая включает в себя команды удобные, но не всем знакомые
-        команды Git, которые могут стать вашими постоянными спутниками в разработке.
-    </p>
-    <p>
-        1. <b class="red" style="color:red">git init</b>
-    </p>
-    <p>
-        Эта команда используется для клонирования проекта как репозитория git.
-    </p>
-    <p>
-        <br>
-    </p>
-    <p>
-        2. <b class="red" style="color:red">git clone
+        2. <b class="black" style="color:black">git clone
         <url>
             <directory></directory>
         </url>
     </b>
     </p>
     <p>
-        Эта команда клонирует репозиторий в новую директорию.&nbsp;
+        Эта команда клонирует репозиторий в новую директорию.
     </p>
     <p>
         <code> git config</code> — это удобная функция, которая используется для настройки значений конфигурации Git на
@@ -42,12 +19,14 @@
         <code>git config --local user.email "<a href="mailto:your_email@example.com">your_email@example.com</a>"</code>
     </p>
     <p>
-        <code> &nbsp;git config --global user.name "Name"</code>
+        <code> git config --global user.name "Name"</code>
     </p>
     <p>
-        <code> &nbsp;git config --global user.email "<a href="mailto:your_email@example.com">your_email@example.com</a>"</code>
+        <code> git config --global user.email "<a href="mailto:your_email@example.com">your_email@example.com</a>"</code>
     </p>
-    <br>
+    <p>
+        Эта команда клонирует репозиторий в новую директорию.&nbsp;
+    </p>
     <p>
         Если надо скопировать только файлы:
     </p>
@@ -59,41 +38,36 @@
         <code>
             rm -rf !$/.git</code>
     </p>
-    <p>
-        <br>
-    </p>
-    <p>
-        3. <b class="red" style="color:red">git remote add
+       <p>
+        3. <b class="black" style="color:black">git remote add
         <repository>
             <url></url>
         </repository>
     </b>
     </p>
     <p>
+        Эта команда используется для добавления или подключения к удаленному репозиторию.
+    </p>
+    <p>
         Пример: <code>git remote add origin <a
             href="https://github.com/MrKrishnaAgarwal/Git-CheatSheet.git?roistat_visit=2927050">https://github.com/MrKrishnaAgarwal/Git-CheatSheet.git</a></code>
     </p>
+    
     <p>
-        Эта команда используется для добавления или подключения к удаленному репозиторию.
-    </p>
-    <br>
-    <p>
-        4. <b class="red" style="color:red">git remote -v</b>
+        4. <b class="black" style="color:black">git remote -v</b>
     </p>
     <p>
         Эта команда используется для просмотра подключенных удаленных репозиториев.
     </p>
-    <br>
     <p>
-        5. <b class="red" style="color:red">git statuses</b>
+        5. <b class="black" style="color:black">git status</b>
     </p>
     <p>
         Эта команда используется для просмотра статуса файлов в вашем локальном репозитории. Отслеживаются ли файлы? Не
         отслеживается? Изменены ли они?
     </p>
-    <br>
     <p>
-        6. <b class="red" style="color:red">git add </b>
+        6. <b class="black" style="color:black">git add </b>
     </p>
     <b> </b>
     <p>
@@ -103,29 +77,28 @@
         <code>git add index.html style.css </code>style.scss
     </p>
     <p>
-        Эта команда переносит все старые и измененные файлы в раздел добавленных файлов
+        Эта команда переносит все старые и измененные файлы в раздел добавленных файлов.
     </p>
     <p>
         <code> git add -A</code>
     </p>
     <p>
-        -
-    </p>
+    Эта команда используется для индексирования всех неустановленных файлов.
+</p>
     <p>
         <code>git add
             <filename></filename>
         </code>
     </p>
     <p>
-        для конкретного файла
+        для конкретного файла.
     </p>
-    <br>
     <p>
-        7.<b class="red" style="color:red"> git reset</b>
+        7.<b class="black" style="color:black"> git reset</b>
     </p>
     <p>
         Эта команда используется для мягкой или жёсткой отмены изменений, позволяет сбросить состояние проекта до
-        нужного коммита. Например.&nbsp;
+        нужного коммита. Например:
     </p>
     <p>
         отмена неотправленного коммита: <code>git reset --hard HEAD^</code>
@@ -141,13 +114,12 @@
             git push origin -f</code>
     </p>
     <p>
-        <br>
     </p>
     <p>
-        8. <b class="red" style="color:red">git commit</b>
+        8. <b class="black" style="color:black">git commit</b>
     </p>
     <p>
-        -
+        Эта команда совершает коммит  — «закрепляет» промежуточные результаты.
     </p>
     <p>
         <code> git commit -m “Text message”</code>
@@ -156,7 +128,7 @@
         Пример: <code>git commit -m "added navigation bar"</code>
     </p>
     <p>
-        Команда <code>-m</code> позволяет указать commit message без обращения к редактору
+        Команда <code>-m</code> позволяет указать commit message без обращения к редактору.
     </p>
     <p>
         <code> git commit --amend</code>
@@ -165,9 +137,8 @@
         Команда <code>--amend</code> вносит в предыдущий коммит изменения, которые подготовлены к коммиту. Используется
         и для редактирования предыдущего commit message, если в нём допущены ошибки.
     </p>
-    <br>
     <p>
-        9. <b class="red" style="color:red">git push -u origin</b>
+        9. <b class="black" style="color:black">git push -u origin</b>
     </p>
     <p>
         Ключ <code>-u</code> (полный вариант <code>--set-upstream</code>) создаёт в удалённом репозитории ветку,
@@ -189,7 +160,7 @@
         зафиксирует место, куда вы отправляете эти файлы. И в следующий раз можно будет использовать команду git push.
     </p>
     <p>
-        10. <b class="red" style="color:red">git fetch
+        10. <b class="black" style="color:black">git fetch
         <repository>
             <branch></branch>
         </repository>
@@ -199,18 +170,18 @@
         Эта команда используется для получения самой последней версии вашего локального репозитория. Загружает коммиты,
         файлы и ссылки из удаленного репозитория в ваш локальный репозиторий.
     </p>
-    <br><br><br><br><br>
-    <br>
     <p>
-        11. <b class="red" style="color:blue">git pull&nbsp;</b>
+        11. <b class="black" style="color:black">git pull</b>
     </p>
     <p>
         Эта команда используется для извлечения только что полученной информации и ее загрузки в локальный репозиторий.
         git pull запускает немедленное обновление локального репозитория.
     </p>
     <p>
-        12. git branch Эта команда используется для создания, просмотра переименования и удаления ветки, на которой вы
-        сейчас находитесь.&nbsp;
+        12. <b class="black" style="color:black"> git branch</b> 
+        <p>
+        Эта команда используется для создания, просмотра переименования и удаления ветки, на которой вы
+        сейчас находитесь.
     </p>
     <p>
         <code>git branch -a</code>
@@ -224,9 +195,8 @@
     <p>
         Эта команда используется для предварительного просмотра всех веток на сервере.
     </p>
-    <br>
     <p>
-        13. <b>git checkout</b>
+        13. <b class="black" style="color:black"> git checkout</b>
     </p>
     <p>
         Пример: <code>git checkout master</code> или <code>git checkout develop</code>
@@ -239,9 +209,8 @@
             <file></file>
         </code> — ещё один&nbsp; вариант использования
     </p>
-    <br>
     <p>
-        14. <b>git merge</b>
+        14. <b class="black" style="color:black"> git merge</b>
     </p>
     <p>
         Эта команда используется для объединения двух веток. Для этого укажите ветку, которую вы хотите унаследовать
@@ -254,9 +223,8 @@
     <p>
         Здесь основная ветка наследует код из ветки разработки.
     </p>
-    <br>
     <p>
-        15. <b>git merge — abort</b>
+        15. <b class="black" style="color:black">git merge — abort</b>
     </p>
     <p>
         Эта команда используется для отмены слияния.
@@ -267,12 +235,12 @@
         удалось. Он также может предложить вам исправить конфликты слияния.
     </p>
     <p>
-        Вот ещё&nbsp;один признак: <code>~/NextCloud/Documents/Web Projects/Cloud4Y (master)</code>
+        Вот ещё один признак: <code>~/NextCloud/Documents/Web Projects/Cloud4Y (master)</code>
     </p>
     <p>
         Посмотрите в самый конец строки. В скобках написано (master). Это потому, что мы находимся в основной ветке.
         Если вы находитесь в ветке разработки, это будет означать (develop). Если смерджить не получилось, появится
-        надпись (master|merging) или что-то в этом роде.&nbsp;
+        надпись (master|merging) или что-то в этом роде.
     </p>
     <p>
         <code>git merge -X theirs</code>
@@ -284,43 +252,67 @@
         Эта команда используется для объединения двух веток. И если есть конфликты слияния, эта команда просто
         предположит, что вы предпочитаете изменения, сделанные в указанной ветке (а не в текущей).
     </p>
-    <br>
     <p>
-        16. <b>git reset — hard HEAD</b>
+        16. <b class="black" style="color:black">git reset — hard HEAD</b>
     </p>
     <p>
         Эта команда удалит все изменения, внесенные вами в ваш локальный репозиторий, и обновит его до последней версии,
         которая была закоммичена на GitHub.
     </p>
-    <br>
     <p>
-        17. <b>git reset HEAD^</b>
+        17.<b class="black" style="color:black">git reset HEAD^</b>
+        <p>
+            Эта команда перемещает текущую ветку назад на два коммита, эффективно удаляя два снапшота, которые мы только что создали, 
+            из истории проекта. Он отменяет случайное закоммичивание и сохраняет изменения.
+        </p> 
     </p>
     <p>
-  -
-    </p>
-    <br>
+        18. <b class="black" style="color:black">git clean </b>
+
+            <p> Эта команда используется для удаления неотслеживаемых файлов из вашего локального репозитория. 
+
+            </p>
+
     <p>
-        21. <b>git diff</b>
+    19. <b class="black" style="color:black">git rm -r — cached</b>
+    <p>
+        <p>Пример: git rm -r --cached config.js</p>
+
+Эта команда используется для удаления файла из удаленного репозитория (GitHub), не удаляя его в локальном репозитории.
+    </p>
+
+    <p>
+    20. <b class="black" style="color:black">git bisect</b>
+    </p>
+    <p>   Эта команда используется для обнаружения коммита, вызвавшего ошибку в коде. 
+        Так проще отследить коммит, где код работает и выявить проблемный коммит.
+
+    </p>
+
+     <p>
+        21. <b class="black" style="color:black">git diff</b>
     </p>
           Эта команда перемещает текущую ветку назад на два коммита, эффективно удаляя два снапшота, которые мы только что
         создали, из истории проекта. Он отменяет случайное закоммичивание и сохраняет изменения.
     <p>
         <code> git diff
             <file></file>
-        </code> — частое использование&nbsp;
+        </code> — частое использование
     </p>
     <p>
         Эта команда используется сравнения изменений.
     </p>
     <p>
-        <br>
     </p>
     <p>
         22. <b>git rebase</b>
     </p>
     <p>
-     -
+        Полезно, если вы работали с веткой, но затем вам нужно объединить изменения, сделанные в этой ветке, с другой. 
+        С помощью git rebase вы можете «переместить» свою ветку поверх последней версии. Это также полезно, если команда следует общепринятым 
+        соглашениям о коммитах, таким как объединение коммитов вместе 
+        или разделение «больших» коммитов на «меньшие». 
+        Это используется в основном для «реорганизации» ваших коммитов.
     </p>
     <p>
         <code>git rebase -i HEAD~N</code>
@@ -329,13 +321,12 @@
         Склеить коммиты, переписав историю с момента&nbsp;HEAD~N, т.е. с того, что было N коммитов назад. -i — означает
         в интерактивном режиме.
     </p>
-    <br>
     <p>
         23. <b>git stash</b>
     </p>
     <p>
         Эта команда используется для сохранения неподтверждённых изменений в отдельном хранилище, чтобы можно было
-        вернуться к ним позже. Сами &nbsp;файлы возвращаются к исходному состоянию. Команда полезна, когда вы работаете
+        вернуться к ним позже. Сами файлы возвращаются к исходному состоянию. Команда полезна, когда вы работаете
         над одной веткой, хотите переключиться на другую, но вы ещё не готовы сделать коммит в текущей ветке. Таким
         образом, вы прячете изменения в коде, переключаетесь на другую ветку, возвращаетесь к исходной ветке, а затем
         разархивируете свои изменения.
@@ -343,7 +334,6 @@
     <p>
         <code> git stash pop</code> позволяет применить ранее отложенные изменения.
     </p>
-    <br>
 </article>
 </body>
 </html>
